@@ -53,7 +53,6 @@
         <a href="https://www.linkedin.com/in/haider-akbar-/" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://iradicalhuman.wordpress.com/" class="blog" target="_blank" rel="noopener noreferrer"><i class="bi bi-pencil-square"></i></a>
       </div>
-      
 
     </div>
   </header><!-- End Header -->
@@ -66,7 +65,7 @@
       margin-top: 30px;
     }
   </style>
-  
+
   <section id="about" class="about">
     <div class="about-me container">
       <div class="section-title">
@@ -77,85 +76,119 @@
       </p>
     </div>
   </section>
-  
+
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="section-title">
-        <h2>Portfolio</h2> 
+        <h2>Portfolio</h2>
       </div>
+
+      <!-- Filter Buttons -->
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter=".filter-quantum">Quantum Stuff</li>
+            <li data-filter=".filter-projects">Projects</li>
+            <li data-filter=".filter-blog">Blog</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="row portfolio-container">
-  
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/house2.png" class="img-fluid" alt="Clean Housing Data with SQL">
-          </a>
+
+        <!-- === Projects Category === -->
+        <!-- Existing Projects -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
+          <img src="assets/img/house2.png" class="img-fluid" alt="Clean Housing Data with SQL">
           <div class="portfolio-info">
-              <h4><a href="https://github.com/coffee34900/Data-Cleaning-Nashville-Housing">CLEANING HOUSING DATA WITH SQL</a></h4>
-              <p>In this project, we take raw housing data and use SQL Server to clean and transform it into a more usable format for analysis.</p>
-              <a href="https://github.com/coffee34900/Data-Cleaning-Nashville-Housing" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            <h4><a href="https://github.com/coffee34900/Data-Cleaning-Nashville-Housing" target="_blank" rel="noopener noreferrer">CLEANING HOUSING DATA WITH SQL</a></h4>
+            <p>In this project, we take raw housing data and use SQL Server to clean and transform it into a more usable format for analysis.</p>
+            <a href="https://github.com/coffee34900/Data-Cleaning-Nashville-Housing" class="details-link" title="More Details" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
           </div>
-      </div>
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="assets/img/movies.png" class="img-fluid" alt="game">
-    </a>
-
-
-    <div class="portfolio-info">
-        <h4><a href="https://github.com/coffee34900/Movies">MOVIE CORRELATION PROJECT USING PYTHON
-        </a></h4>
-        <p>An attempt to identify a plethora of variables effecting the gross (the extent of their) impact on the concerned dependent variable, in this factors determining the gross revenue of movies.</p>
-        <a href="https://github.com/coffee34900/Movies" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
         </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img src="assets/img/tableau.png" class="img-fluid" alt="game">
-      </a>
 
-
-      <div class="portfolio-info">
-          <h4><a href="https://public.tableau.com/app/profile/haider7886">TABLEAU DASHBOARD</a></h4>
-          <p>Effective visualization of data ranging from global issues like covid'19 to industry-specific matters, in one case geography-based price distribution for rental/hosting agencies.</p>
-          <a href="https://public.tableau.com/app/profile/haider7886" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-      </div>
-       
-    
-    </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img src="assets/img/virus.png" class="img-fluid" alt="game">
-      </a>
-
-      <div class="portfolio-info">
-        <h4><a href="https://github.com/coffee34900/COVID-data-exploration">DATA EXPLORATION IN SQL</a></h4>
-        <p>Usage of SQL server for generation and cleaning of accurate data-sets regarding outcomes of COVID'19, later to be used for visualization and analysis.</p>
-        <a href="https://github.com/coffee34900/COVID-data-exploration" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-    </div>
-      </div>
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <img src="assets/img/excel.png" class="img-fluid" alt="game">
-    </a>
-
-
-      <div class="portfolio-info">
-          <h4><a href="https://github.com/coffee34900/Excel-projects-Datasets">EXCEL PROJECTS</a></h4>
-          <p>Data cleaning and dashboard creation using Excel sheets.</p>
-          <a href="https://github.com/coffee34900/Excel-projects-Datasets" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-      </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
+          <img src="assets/img/movies.png" class="img-fluid" alt="Movie Correlation Project">
+          <div class="portfolio-info">
+            <h4><a href="https://github.com/coffee34900/Movies" target="_blank" rel="noopener noreferrer">MOVIE CORRELATION PROJECT USING PYTHON</a></h4>
+            <p>An attempt to identify a plethora of variables affecting the gross revenue of movies.</p>
+            <a href="https://github.com/coffee34900/Movies" class="details-link" title="More Details" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <img src="assets/img/game.png" class="img-fluid" alt="game">
-      </a>
 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
+          <img src="assets/img/tableau.png" class="img-fluid" alt="Tableau Dashboard">
+          <div class="portfolio-info">
+            <h4><a href="https://public.tableau.com/app/profile/haider7886" target="_blank" rel="noopener noreferrer">TABLEAU DASHBOARD</a></h4>
+            <p>Effective visualization of data ranging from global issues like COVID-19 to industry-specific matters.</p>
+            <a href="https://public.tableau.com/app/profile/haider7886" class="details-link" title="More Details" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
 
-      <div class="portfolio-info">
-          <h4><a href="https://github.com/coffee34900/Games">GAMES</a></h4>
-          <p>These are some of the games that I have created while practicing python.</p>
-          <a href="https://github.com/coffee34900/Games" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-      </div>
-  </div>
-  
-  
-        <!-- more project items... -->
-  
+        <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
+          <img src="assets/img/virus.png" class="img-fluid" alt="COVID Data Exploration">
+          <div class="portfolio-info">
+            <h4><a href="https://github.com/coffee34900/COVID-data-exploration" target="_blank" rel="noopener noreferrer">DATA EXPLORATION IN SQL</a></h4>
+            <p>Usage of SQL Server for generating and cleaning accurate datasets regarding COVID-19 outcomes.</p>
+            <a href="https://github.com/coffee34900/COVID-data-exploration" class="details-link" title="More Details" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
+          <img src="assets/img/excel.png" class="img-fluid" alt="Excel Projects">
+          <div class="portfolio-info">
+            <h4><a href="https://github.com/coffee34900/Excel-projects-Datasets" target="_blank" rel="noopener noreferrer">EXCEL PROJECTS</a></h4>
+            <p>Data cleaning and dashboard creation using Excel sheets.</p>
+            <a href="https://github.com/coffee34900/Excel-projects-Datasets" class="details-link" title="More Details" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-projects">
+          <img src="assets/img/game.png" class="img-fluid" alt="Games">
+          <div class="portfolio-info">
+            <h4><a href="https://github.com/coffee34900/Games" target="_blank" rel="noopener noreferrer">GAMES</a></h4>
+            <p>These are some of the games that I have created while practicing Python.</p>
+            <a href="https://github.com/coffee34900/Games" class="details-link" title="More Details" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <!-- === Blog Category === -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-blog">
+          <img src="assets/img/pen.jpg" class="img-fluid" alt="Blog">
+          <div class="portfolio-info">
+            <h4><a href="https://iradicalhuman.wordpress.com/" target="_blank" rel="noopener noreferrer">BLOG</a></h4>
+            <p>I think alot, and here is the proof.</p>
+            <a href="https://iradicalhuman.wordpress.com/" class="details-link" title="Visit Blog" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <!-- === Quantum Notes Category === -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-quantum">
+          <img src="assets/img/quantum.jpeg" class="img-fluid" alt="Quantum Notes">
+          <div class="portfolio-info">
+            <h4>Stabilizer  Formalism and some other stuff</h4>
+            <p>
+              There will definitely be mistakes, so please feel free to point them out. I'd appreciate your feedback.            </p>
+            </p>
+            <!-- Placeholder link; you can update this when you have content -->
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+        <!-- === Quantum Notes Category === -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-quantum">
+          <img src="assets/img/quantum_1.jpeg" class="img-fluid" alt="Quantum Notes">
+          <div class="portfolio-info">
+            <h4>Zap! Pow! Solved: Solving Problems Really Fast</h4>
+            <p>
+            Read at your own discretion.
+            </p>
+            <!-- Placeholder link; you can update this when you have content -->
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+
       </div>
     </div>
   </section>
@@ -185,13 +218,14 @@
             <p><a href="https://iradicalhuman.wordpress.com/">Link to my writings.</a></p>
           </div>
         </div>
-        
+
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
               <a href="https://www.linkedin.com/in/haider-akbar-/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://iradicalhuman.wordpress.com/" class="blog" target="_blank" rel="noopener noreferrer"><i class="bi bi-pencil-square"></i></a>
             </div>
           </div>
         </div>
