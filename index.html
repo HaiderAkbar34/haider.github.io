@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/hh.jpeg" rel="icon">
-  <link href="assets/img/hh.jpeg" rel="hi">
+  <!-- Removed the incorrect rel="hi" link -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,12 +27,55 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Add Smooth Scrolling and Scroll Snap -->
+  <style>
+    /* Enable smooth scrolling behavior */
+    html {
+      scroll-behavior: smooth;
+      /* Set scroll-snap type to mandatory on the vertical axis */
+      scroll-snap-type: y mandatory;
+      /* Ensure the body takes the full height */
+      height: 100%;
+    }
+
+    /* Ensure the body is scrollable and hides overflow */
+    body {
+      margin: 0;
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    /* Style each section to snap at the start */
+    section {
+      scroll-snap-align: start;
+      height: 100vh; /* Each section takes up full viewport height */
+      /* Optional: Add padding or other styles as needed */
+    }
+
+    /* Optional: Hide scrollbar for a cleaner look */
+    /* Note: This may affect accessibility; use with caution */
+    /* body {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;  /* IE 10+ */
+    }
+
+    body::-webkit-scrollbar { /* WebKit */
+      width: 0;
+      height: 0;
+    } */
+
+    /* Optional: Adjust the z-index of the header if fixed */
+    header {
+      position: relative; /* Changed from default to relative if needed */
+      z-index: 10;
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header">
+  <header id="header" class="section">
     <div class="container">
 
       <h1><a href="index.html">Haider Akbar</a></h1>
@@ -66,7 +109,7 @@
     }
   </style>
 
-  <section id="about" class="about">
+  <section id="about" class="about section">
     <div class="about-me container">
       <div class="section-title">
         <h2>About</h2>
@@ -78,7 +121,7 @@
   </section>
 
   <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio section">
     <div class="container">
       <div class="section-title">
         <h2>Portfolio</h2>
@@ -158,7 +201,7 @@
           <img src="assets/img/pen.jpg" class="img-fluid" alt="Blog">
           <div class="portfolio-info">
             <h4><a href="https://iradicalhuman.wordpress.com/" target="_blank" rel="noopener noreferrer">BLOG</a></h4>
-            <p>I think alot, and here is the proof.</p>
+            <p>I think a lot, and here is the proof.</p>
             <a href="https://iradicalhuman.wordpress.com/" class="details-link" title="Visit Blog" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
           </div>
         </div>
@@ -167,9 +210,9 @@
         <div class="col-lg-4 col-md-6 portfolio-item filter-quantum">
           <img src="assets/img/quantum.jpeg" class="img-fluid" alt="Quantum Notes">
           <div class="portfolio-info">
-            <h4>Stabilizer  Formalism and some other stuff</h4>
+            <h4>Stabilizer Formalism and some other stuff</h4>
             <p>
-              There will definitely be mistakes, so please feel free to point them out. I'd appreciate your feedback.            </p>
+              There will definitely be mistakes, so please feel free to point them out. I'd appreciate your feedback.
             </p>
             <!-- Placeholder link; you can update this when you have content -->
             <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -181,7 +224,7 @@
           <div class="portfolio-info">
             <h4>Zap! Pow! Solved: Solving Problems Really Fast</h4>
             <p>
-            Read at your own discretion.
+              Read at your own discretion.
             </p>
             <!-- Placeholder link; you can update this when you have content -->
             <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
@@ -195,7 +238,7 @@
   <!-- End Portfolio Section -->
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact section">
     <div class="container">
 
       <div class="section-title">
@@ -238,6 +281,7 @@
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <!-- This div is intentionally left empty for future use or layout purposes -->
         </div>
       </div>
 
